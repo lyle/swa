@@ -5,11 +5,15 @@ guidedModel =// @startlock
 	{
 		fullName :
 		{
+			onGet:function()
+			{// @endlock
+				return this.firstName + ' ' + this.lastName;
+			},// @startlock
 			events :
 			{
 				onLoad:function(attributeName)
 				{// @endlock
-					this.firstName + ' ' + this.lastName;
+
 				}// @startlock
 			}
 		},
